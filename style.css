@@ -1,29 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,500&display=swap');
 
 
-:root{
-    --primaryColor:#101820;
-    --secondColor:#009bf9;
-    --textColor:#F2FAFF;
-    --gray:rgba(42,53,62,0.4);
 
-}
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    text-decoration: none!important;
-    border: none;
-    list-style: none;
-
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
-    font-family: 'Open Sans',sans-serif;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 5.5rem;
-    background: var(--primaryColor);
-    color: var(--textColor);
-    
+    background: #102754;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+}
+
+.nav-item a{
+    font-size: 18px;
+    color: #102754;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+
+}
+
+.nav-item a:hover,
+nav-item a:active{
+  color: #0ef;
 }
