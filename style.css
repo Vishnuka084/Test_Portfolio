@@ -34,16 +34,14 @@ body{
     cursor: default;
 }
 
-.nav-item a{
+.navbar a{
     font-size: 18px;
-    color: #102754;
+    color: #fff;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
-
+    transition: .3s;
 }
-
-.nav-item a:hover,
-nav-item a:active{
+.navbar a:hover{
   color: #0ef;
 }
