@@ -103,6 +103,10 @@ body{
 }
 .home-img{
     max-width: 450px;
+    opacity: 0;
+    animation: ZoomIn 1s ease forwards;
+    animation-delay: 2s;
+
 }
 
 
@@ -120,6 +124,10 @@ body{
     text-decoration: none;
     margin: 30px 15px 30px 0;
     transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+
  
 }
 
@@ -140,6 +148,9 @@ body{
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
 }
 
 /* keyframe animaton */
@@ -188,6 +199,18 @@ body{
     }
     100%{
         transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+@keyframes ZoomIn{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(1);
         opacity: 1;
     }
 
