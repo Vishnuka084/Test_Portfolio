@@ -94,8 +94,7 @@ body{
 
 .social-media a{
     display: inline-flex;
-    width: 40px;
-    height: 40px;
+    justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
@@ -114,4 +113,17 @@ body{
     background: #0ef;
     color: #1f242d;
     box-shadow: 0 0 20px #0ef;
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #1f242d;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
 }
